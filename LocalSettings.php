@@ -206,6 +206,17 @@ $wgGroupPermissions['sysop']['deleterevision']  = true;
 $wgGroupPermissions['user']['move'] = true;
 
 ##### Extensions #####
+# UserMerge ------------------------
+require_once("$IP/extensions/UserMerge/UserMerge.php");
+// By default nobody can use this function, enable for bureaucrat?
+$wgGroupPermissions['bureaucrat']['usermerge'] = true;
+
+# WikiEditor -----------------------
+require_once("$IP/extensions/WikiEditor/WikiEditor.php");
+$wgDefaultUserOptions['usebetatoolbar'] = 1;
+$wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
+$wgDefaultUserOptions['wikieditor-preview'] = 1;
+
 # Intersection ---------------------
 include("$IP/extensions/intersection/DynamicPageList.php");
 
@@ -306,5 +317,7 @@ $wgGroupPermissions['sysop']['editalluserpages'] = true; /* Set this to allow sy
 
 include("$IP/extensions/BentoLanguage.php");
 include("$IP/extensions/google-coop.php");
+
+$wgShowExceptionDetails = true;
 
 ?>

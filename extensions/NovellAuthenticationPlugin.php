@@ -302,7 +302,7 @@
       	  $returnto  = 'Location: https://espstage.provo.novell.com/AGLogout';
 	}
 	else {
-      	  $returnto  = 'Location: https://esp.novell.com/AGLogout';
+      	  $returnto  = 'Location: http://www.opensuse.org/AGLogout';
 	}
       header ($returnto);
       exit (0);
