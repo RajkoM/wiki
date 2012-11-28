@@ -75,7 +75,7 @@ if(    isset( $_SERVER['SERVER_PORT'] )
 	&& (    ( $wgProto == 'http' && $_SERVER['SERVER_PORT'] != 80 )
 	 || ( $wgProto == 'https' && $_SERVER['SERVER_PORT'] != 443 ) ) ) {
 
-	$wgServer .= ":" . $_SERVER['SERVER_PORT'];
+#	$wgServer .= ":" . $_SERVER['SERVER_PORT'];
 }
 /** @endcond */
 

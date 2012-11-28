@@ -120,7 +120,7 @@ $wgDefaultSkin = 'bentofluid';
 $wgWhitelistEdit = true;
 $wgLocalTZoffset = date("Z") / 3600;
 $wgGroupPermissions['*'    ]['edit']            = false;
-$wgFavicon = "http://www.opensuse.org/favicon.ico";
+$wgFavicon = "//www.opensuse.org/favicon.ico";
 $wgDiff3 = "/usr/bin/diff3";
 
    # used for mysql/search settings
